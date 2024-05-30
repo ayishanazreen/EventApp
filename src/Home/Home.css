@@ -1,0 +1,32 @@
+.title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: 50px ;
+
+}
+
+.main-div{
+    display: grid;
+    grid-gap: 0; /* No gap between grid items */
+    margin: 0;
+    padding: 0;
+}
+
+.title_div{
+    max-width: 100%;
+    height:500px;
+    background-color: darksalmon;
+    margin: 0;
+
+}
+
+.image-div{
+    margin: 0;
+    
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 1px;
+}

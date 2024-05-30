@@ -1,0 +1,99 @@
+.section-div{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.card-img-custom {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+  }
+  
+
+  .card-body{
+    background-color: rgb(197, 194, 235);
+  }
+
+  .pic5{
+    width: 100% ;
+    max-height: 700px;
+  }
+
+  .plan-btn{
+    border: 2px solid rgb(10, 4, 4);
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #9383C5, #56e3fa);
+    color: black;
+    font-weight: bolder;
+    width: 50%; height: 30%;
+  }
+
+  .btn-div{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   background-image: url('../assets/banners/pic6.jpg');
+   background-size: cover;
+   margin-top: 54px;
+   height: 570px;
+   opacity: 0.8;
+   width:100%;
+   cursor: pointer;
+   transition: width 0.3s ease-out;
+  }
+
+  .btn-div:hover {
+    background-size: 150%;
+    transition: all 0.1s ease-in-out;
+    }
+    
+
+   
+  .effect-container{
+    position: relative;
+    overflow: hidden;
+
+    --effect-name: ripple;
+    --effect-duration:1000ms;
+    --effect-top:0px;
+    --effect-left:0px;
+    --effect-height:100px;
+    --effect-width:100px;
+    --effect-color: rgb(206, 24, 24);   
+
+  }
+
+  .effect-container::before{
+    content: "";
+    position: relative;
+    opacity: 0.3;
+    top: var(--effect-top);
+    left: var(--effect-left);
+    width: var(--effect-width);
+    height: var(--effect-height);
+    border-radius: 50%;
+    transform: scale(0);
+    background: var(--effect-color);
+  }
+
+  .effect-container.active::before{
+    border-radius: 50%;
+    animation: ripple var(--effect-duration) linear forwards;
+  }
+
+  
+
+  @keyframes ripple{
+    from{
+      transform: scale(0);
+    }
+    to{
+        transform: scale(6);
+        opacity: 0;
+    }
+  }
+  .Life-title{
+    text-align: center;
+    color: blueviolet;
+  }

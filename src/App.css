@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+/* src/EventList.css */
+.event-list {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.event-card {
+	background-color: #D2E3C8;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin: 10px;
+	padding: 15px;
+	width: 500px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.event-card:hover {
+	box-shadow: 0 4px 8px rgb(14, 15, 14);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.event-info {
+	margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.event-title {
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-date {
+	color: #555;
+}
+
+.event-actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.delete-btn:hover {
+	background-color: rgb(10, 9, 9);
+	color: white;
+
+}
+
+.rem-para {
+	background-color: rgb(13, 14, 13);
+	color: white;
+	padding: 2px;
+	width: fit-content;
+
+	position: relative;
+	left: -1px;
+	bottom: 22px;
+
+}
+
+
+
+
+/* form 
+*/
+
+input {
+	
+	width: 500px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 2px solid rgb(20, 17, 17);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow:#f0806d;
+	gap: 5px;
+	background: linear-gradient(to right, #9683eb, #f0806d);
+	;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+label {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 1000;
+}
+.remLabel {
+ padding-right: 30%;
+ margin: 0; 
+}
+ 
+.remInput {
+	padding-right: 50%;
 }
